@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <title>Online Bike Parts Shop</title>
+    <style>
+        body {
+            background: url("images/bike.jpg.png") no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(0, 5px);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #81b886;
+        }
+
+        main {
+            padding: 20px;
+            color: #fff;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        footer ul li a:hover {
+            color: #81b886;
+        }
+    </style>
+    <script>
+        function loadIntroduction() {
+            var content = `
+                <div>
+                    <img src="images/bik.jpg" alt="Bike Shop">
+                    <div>
+                        <font size="4">
+                            <div>Welcome to VeloWarehouse - your ultimate destination for high-quality bicycle parts!</div>
+                            <nav>
+                                <div>Explore our extensive collection of pedals, handlebars, brake levers, and more. Ride with confidence, knowing your bike is equipped with top-notch components from VeloWarehouse.</div>
+                            </nav>
+                        </font>
+                    </div>
+                </div>
+            `;
+            document.getElementById("content").innerHTML = content;
+        }
+    </script>
+</head>
+<body onload="loadIntroduction()">
+    <header>
+        <h1>VeloWarehouse - Your Bike Parts Haven</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="page0.html">Our Products</a></li>
+            <li><a href="page3.html">Bike Parts</a></li>
+            <li><a href="page5.html">Introductions</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="content"></div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">FAQ</a></li>
+          
+        </ul>
+    </footer>
+</body>
+</html>
